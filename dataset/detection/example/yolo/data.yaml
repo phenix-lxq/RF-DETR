@@ -1,0 +1,7 @@
+# Synthetic format example. Replace with your real annotated data.
+names:
+  0: part
+nc: 1
+train: train/images
+val: valid/images
+test: test/images

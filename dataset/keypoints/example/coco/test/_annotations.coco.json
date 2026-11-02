@@ -1,0 +1,76 @@
+{
+  "info": {
+    "description": "Synthetic keypoints format example only",
+    "version": "1.0"
+  },
+  "licenses": [],
+  "images": [
+    {
+      "id": 1,
+      "file_name": "sample_test.png",
+      "width": 384,
+      "height": 256
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "part",
+      "supercategory": "object",
+      "keypoints": [
+        "top_left",
+        "top_right",
+        "bottom_right",
+        "bottom_left"
+      ],
+      "skeleton": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          1
+        ]
+      ]
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": 1,
+      "category_id": 1,
+      "bbox": [
+        48,
+        72,
+        224,
+        112
+      ],
+      "area": 25088,
+      "iscrowd": 0,
+      "keypoints": [
+        48,
+        72,
+        2,
+        272,
+        86,
+        2,
+        244,
+        184,
+        2,
+        76,
+        170,
+        2
+      ],
+      "num_keypoints": 4
+    }
+  ]
+}

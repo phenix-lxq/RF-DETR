@@ -1,0 +1,11 @@
+# Synthetic format example. Replace with your real annotated data.
+names:
+  0: part
+nc: 1
+train: train/images
+val: valid/images
+test: test/images
+kpt_shape: [4, 3]
+flip_idx: [1, 0, 3, 2]
+kpt_names:
+  0: [top_left, top_right, bottom_right, bottom_left]

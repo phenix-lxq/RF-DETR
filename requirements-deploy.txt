@@ -1,0 +1,5 @@
+# Remote inference only; use the existing remote environment when dependencies are already installed.
+openvino==2026.4.1
+numpy>=1.26,<3
+Pillow>=10,<14
+# Camera/video input optionally needs opencv-python-headless>=4.8.

@@ -1,0 +1,37 @@
+{
+  "info": {
+    "description": "Synthetic detection format example only",
+    "version": "1.0"
+  },
+  "licenses": [],
+  "images": [
+    {
+      "id": 1,
+      "file_name": "sample_test.png",
+      "width": 384,
+      "height": 256
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "part",
+      "supercategory": "object"
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": 1,
+      "category_id": 1,
+      "bbox": [
+        48,
+        72,
+        224,
+        112
+      ],
+      "area": 25088,
+      "iscrowd": 0
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# 在现有 RF-DETR 环境中安装可选 CPU 加速和 INT8 校准依赖。
+openvino==2026.4.1
+nncf==3.4.0

@@ -1,0 +1,40 @@
+// 中文注释对照文件，供阅读和整理标注时参照。
+// 训练请使用同目录的 _annotations.coco.json；标准 JSON 不支持这些行内注释。
+// 此文件与对应 JSON 的字段和数值一致，仅增加说明。
+{
+  "info": { // 数据集基本信息，不是目标标注
+    "description": "Synthetic detection format example only", // 数据集描述；此处是用于说明格式的合成示例
+    "version": "1.0" // 数据集版本号
+  },
+  "licenses": [], // 图片许可信息列表；本示例留空
+  "images": [ // 图片信息列表，每张图片对应一条记录
+    {
+      "id": 1, // 图片唯一 ID，在当前 JSON 的 images 列表中不可重复
+      "file_name": "sample_valid.png", // 图片文件名或相对路径，相对于当前 JSON 所在的划分目录
+      "width": 384, // 原始图片宽度，单位为像素
+      "height": 256 // 原始图片高度，单位为像素
+    }
+  ],
+  "categories": [ // 类别定义列表；各数据划分应使用一致的类别定义
+    {
+      "id": 1, // 类别 ID；COCO 可从 1 开始，与 annotations.category_id 对应
+      "name": "part", // 类别名称，本例 part 表示一个零件
+      "supercategory": "object" // 上级类别名称，用于类别分组
+    }
+  ],
+  "annotations": [ // 目标实例标注列表，同一张图片可包含多个目标
+    {
+      "id": 1, // 目标标注唯一 ID；同一图片中的不同目标也需使用不同 ID
+      "image_id": 1, // 该目标所属图片的 ID，对应 images 中的 id
+      "category_id": 1, // 该目标的类别 ID，对应 categories 中的 id
+      "bbox": [ // 目标框：[左上角 x, 左上角 y, 宽度, 高度]，均为原始图片上的像素值
+        80, // 目标框左上角横坐标 x，单位为像素
+        56, // 目标框左上角纵坐标 y，单位为像素
+        160, // 目标框宽度 width，单位为像素
+        128 // 目标框高度 height，单位为像素
+      ],
+      "area": 20480, // 目标面积，单位为平方像素；本例使用 bbox 宽乘高
+      "iscrowd": 0 // 是否为拥挤群体区域：0 为普通实例，1 为 crowd 区域
+    }
+  ]
+}

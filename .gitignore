@@ -1,0 +1,44 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local editor settings and secrets
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+
+# Generated training, inference, and deployment artifacts
+/runs/
+/deployment/
+/deployment-validation/
+*.log
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.bin
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Keep dataset format guides and synthetic examples, exclude real data
+/dataset/**
+!/dataset/*/
+!/dataset/*/FORMAT_EXAMPLE.md
+!/dataset/*/example/
+!/dataset/*/example/**
